@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco</title>
+</head>
+<body>
+    <h1>Banco - Gerenciamento de Conta</h1>
+    <button id="criar-conta">Criar Conta</button>
+    <button id="depositar">Depositar 100</button>
+    <button id="sacar">Sacar 50</button>
+    <p id="saldo">Saldo: R$ 0</p>
+
+    <script>
+        const saldoElement = document.getElementById('saldo');
+        let saldo = 0;
+
+        document.getElementById('criar-conta').onclick = () => {
+            saldo = 0;
+            saldoElement.innerText = `Saldo: R$ ${saldo}`;
+        };
+
+        document.getElementById('depositar').onclick = () => {
+            saldo += 100;
+            saldoElement.innerText = `Saldo: R$ ${saldo}`;
+        };
+
+        document.getElementById('sacar').onclick = () => {
+            saldo -= 50;
+            saldoElement.innerText = `Saldo: R$ ${saldo}`;
+        };
+    </script>
+</body>
+</html>

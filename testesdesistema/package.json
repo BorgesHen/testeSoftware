@@ -1,0 +1,16 @@
+{
+  "name": "testejest",
+  "version": "1.0.0",
+  "description": "teste utilizando o jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Henrique Borges",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "puppeteer": "^23.7.1",
+    "selenium-webdriver": "^4.26.0"
+  }
+}
